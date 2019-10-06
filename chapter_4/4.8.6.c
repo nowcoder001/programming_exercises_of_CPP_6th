@@ -14,7 +14,7 @@ of each name.
 
 #include<stdio.h>
 #include<string.h>
-int main()
+int main(void)
 {
     char first_name[20];
     char last_name[20];

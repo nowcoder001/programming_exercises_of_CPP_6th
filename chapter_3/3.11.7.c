@@ -5,7 +5,7 @@ the height in centimeters and convert that to inches.*/
 #include<stdio.h>
 #define CENTI_TO_INCH 2.54
 
-int main()
+int main(void)
 {
     float height_inch;
     float result;

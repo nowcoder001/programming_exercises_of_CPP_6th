@@ -2,7 +2,7 @@
 the character having that ASCII code.*/
 
 #include<stdio.h>
-int main()
+int main(void))
 {
     int value;
     printf("Enter an ASCII code value: ");

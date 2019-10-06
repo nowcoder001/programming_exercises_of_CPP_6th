@@ -10,7 +10,7 @@ download time) showing two digits to the right of the decimal point, as in the f
 #define DOWNLOAD_BIT 18.12
 #define SIZE_OF_FILE 2.20
 
-int main()
+int main(void)
 {
     float download_bytes;
     download_bytes = DOWNLOAD_BIT/8;

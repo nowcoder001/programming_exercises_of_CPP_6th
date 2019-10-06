@@ -5,7 +5,7 @@ is entered.*/
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int const MIN_TO_HOUR = 60;
     int min_input;

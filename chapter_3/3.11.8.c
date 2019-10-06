@@ -10,7 +10,7 @@ an integer type?*/
 #define TABLE_TO_OUNCE 2
 #define TEA_TO_TABLE 3
 
-int main()
+int main(void)
 {
     float volume;
     printf("Enter a volume in cups: ");

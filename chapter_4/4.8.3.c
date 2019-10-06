@@ -5,7 +5,7 @@ notation and then in exponential notation. Have the output use the following for
     b. The input is +21.290 or 2.129E+001.*/
 
 #include<stdio.h>
-int main()
+int main(void)
 {
     double num;
     printf("Enter a number: ");

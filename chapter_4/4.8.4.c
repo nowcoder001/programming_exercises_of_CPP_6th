@@ -6,7 +6,7 @@ and display it in meters.*/
 
 #include<stdio.h>
 #define CENTI_TO_METER 100
-int main()
+int main(void)
 {
     char name[20];
     float height;

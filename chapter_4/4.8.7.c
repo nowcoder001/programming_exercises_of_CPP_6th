@@ -8,7 +8,7 @@ values?*/
 #include<stdio.h>
 #include<float.h>
 
-int main()
+int main(void)
 {
     double num1 = 1.0/3.0;
     float num2 = 1.0/3.0;

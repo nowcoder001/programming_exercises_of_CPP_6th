@@ -7,14 +7,14 @@ when the user enters a nonpositive value, such as 0 or -20.*/
 
 #include<stdio.h>
 #define DAYS_PER_WEEK 7
-int main()
+int main(void)
 {
     int enter = 1;
     while(enter > 0)
     {
         printf("Enter the number of days, or enter a nonpositive value to terminate the loop\n");
         scanf("%d",&enter);
-        printf("%d weeks and %d days.\n",enter/DAYS_PER_WEEK,enter%DAYS_PER_WEEK);
+        printf("%d days are %d weeks, %d days.\n",enter,enter/DAYS_PER_WEEK,enter%DAYS_PER_WEEK);
     }
     
     return 0;

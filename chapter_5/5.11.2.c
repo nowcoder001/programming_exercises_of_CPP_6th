@@ -5,7 +5,7 @@ newline.*/
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int num_init = 0;
     int num_enter;

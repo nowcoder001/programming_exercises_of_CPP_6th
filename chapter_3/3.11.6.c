@@ -6,7 +6,7 @@ displays the number of water molecules in that amount.*/
 #define MASS_OF_MOLECULE 3.0e-23
 #define MASS_OF_QUART 950.0
 
-int main()
+int main(void)
 {
     int quart;
     double result;
@@ -14,5 +14,6 @@ int main()
     scanf("%d",&quart);
     result = quart*MASS_OF_QUART/MASS_OF_MOLECULE;
     printf("The number of water molecules in that amount is: %e",result);
+    
     return 0;
 }

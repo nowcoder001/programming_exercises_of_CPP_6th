@@ -10,7 +10,7 @@ Use symbolic constants (using const or #define) for the two conversion factors.*
 
 #include<stdio.h>
 
-int main()
+int main(void)
 {
     const float gallon_to_liter = 3.785;
     const float mile_to_kilometer = 1.609;
