@@ -16,4 +16,6 @@ int main()
     download_bytes = DOWNLOAD_BIT/8;
     printf("At %.2f megebits per second, a file of %.2f megabytes\n",DOWNLOAD_BIT,SIZE_OF_FILE);
     printf("downloads in %.2f seconds.",SIZE_OF_FILE/download_bytes);
+
+    return 0;
 }

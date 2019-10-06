@@ -30,6 +30,5 @@ int main()
 
     printf("The liter-per-100-km value: %.1f\n",gasoline_liters/traveled_kilometers*100);
 
-
-
+    return 0;
 }
