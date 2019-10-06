@@ -2,7 +2,7 @@
 your age in years and then displays the equivalent number of seconds.*/
 
 #include<stdio.h>
-#define second_per_year 3.156e7
+#define SECOND_PER_YEAR 3.156e7
 
 int main()
 {
@@ -10,7 +10,7 @@ int main()
     double result;
     printf("Enter your age: ");
     scanf("%d",&age);
-    result = age*second_per_year;
+    result = age*SECOND_PER_YEAR;
     printf("The equivalent number of seconds of your age is %f.",result);
 
     return 0;

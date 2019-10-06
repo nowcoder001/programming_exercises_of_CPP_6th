@@ -5,19 +5,19 @@ and teaspoons. Why does a floating-point type make more sense for this applicati
 an integer type?*/
 
 #include<stdio.h>
-#define cup_to_pint 2
-#define ounce_to_cup 8
-#define table_to_ounce 2
-#define tea_to_table 3
+#define CUP_TO_PINT 2
+#define OUNCE_TO_CUP 8
+#define TABLE_TO_OUNCE 2
+#define TEA_TO_TABLE 3
 
 int main()
 {
     float volume;
     printf("Enter a volume in cups: ");
     scanf("%f",&volume);
-    printf("The equivalent volumes in pints is %f\n",volume/cup_to_pint);
-    printf("The equivalent volumes in ounces is %f\n",volume*ounce_to_cup);
-    printf("The equivalent volumes in tablespoons is %f\n",volume*ounce_to_cup*table_to_ounce);
-    printf("The equivalent volumes in teaspoons is %f\n",volume*ounce_to_cup*table_to_ounce*tea_to_table);
+    printf("The equivalent volumes in pints is %f\n",volume/CUP_TO_PINT);
+    printf("The equivalent volumes in ounces is %f\n",volume*OUNCE_TO_CUP);
+    printf("The equivalent volumes in tablespoons is %f\n",volume*OUNCE_TO_CUP*TABLE_TO_OUNCE);
+    printf("The equivalent volumes in teaspoons is %f\n",volume*OUNCE_TO_CUP*TABLE_TO_OUNCE*TEA_TO_TABLE);
     return 0;
 }

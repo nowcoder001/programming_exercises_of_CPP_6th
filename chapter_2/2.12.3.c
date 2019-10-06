@@ -2,14 +2,14 @@
 point, don’t worry about fractional years and leap years. */
 
 #include<stdio.h>
-#define const 365
+#define CONST 365
 
 int main(void)
 {
     int age;
     printf("Enter your age: ");
     scanf("%d",&age);
-    printf("Your age is %d, and it's %d days.\n",age,age*const);
+    printf("Your age is %d, and it's %d days.\n",age,age*CONST);
 
     return 0;
 }

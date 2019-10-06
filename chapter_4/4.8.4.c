@@ -5,7 +5,7 @@ Use type float, and use / for division. If you prefer, request the height in cen
 and display it in meters.*/
 
 #include<stdio.h>
-#define centi_to_meter 100
+#define CENTI_TO_METER 100
 int main()
 {
     char name[20];
@@ -14,6 +14,6 @@ int main()
     scanf("%s",name);
     printf("Enter your height in centimeters: ");
     scanf("%f",&height);
-    printf("%s, your are %.3f meters tall.",name,height/centi_to_meter);
+    printf("%s, your are %.3f meters tall.",name,height/CENTI_TO_METER);
     return 0;
 }

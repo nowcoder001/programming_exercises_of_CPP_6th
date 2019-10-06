@@ -7,13 +7,13 @@ download time) showing two digits to the right of the decimal point, as in the f
     downloads in 0.97 seconds.*/
 
 #include<stdio.h>
-#define download_bit 18.12
-#define size_of_file 2.20
+#define DOWNLOAD_BIT 18.12
+#define SIZE_OF_FILE 2.20
 
 int main()
 {
     float download_bytes;
-    download_bytes = download_bit/8;
-    printf("At %.2f megebits per second, a file of %.2f megabytes\n",download_bit,size_of_file);
-    printf("downloads in %.2f seconds.",size_of_file/download_bytes);
+    download_bytes = DOWNLOAD_BIT/8;
+    printf("At %.2f megebits per second, a file of %.2f megabytes\n",DOWNLOAD_BIT,SIZE_OF_FILE);
+    printf("downloads in %.2f seconds.",SIZE_OF_FILE/download_bytes);
 }

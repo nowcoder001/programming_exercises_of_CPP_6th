@@ -3,7 +3,7 @@ height in inches and then displays your height in centimeters. Or, if you prefer
 the height in centimeters and convert that to inches.*/
 
 #include<stdio.h>
-#define centi_to_inch 2.54
+#define CENTI_TO_INCH 2.54
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
     float result;
     printf("Enter your height in inches: ");
     scanf("%f",&height_inch);
-    printf("Your height in centimeters is %f",height_inch*centi_to_inch);
+    printf("Your height in centimeters is %f",height_inch*CENTI_TO_INCH);
 
     return 0;
 }

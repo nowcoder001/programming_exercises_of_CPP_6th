@@ -3,8 +3,8 @@ about 950 grams. Write a program that requests an amount of water, in quarts, an
 displays the number of water molecules in that amount.*/
 
 #include<stdio.h>
-#define mass_of_molecule 3.0e-23
-#define mass_of_quart 950.0
+#define MASS_OF_MOLECULE 3.0e-23
+#define MASS_OF_QUART 950.0
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
     double result;
     printf("Enter the amount of water in quarts: ");
     scanf("%d",&quart);
-    result = quart*mass_of_quart/mass_of_molecule;
+    result = quart*MASS_OF_QUART/MASS_OF_MOLECULE;
     printf("The number of water molecules in that amount is: %e",result);
     return 0;
 }
