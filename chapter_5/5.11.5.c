@@ -5,7 +5,17 @@ third day, and so on.) Modify the program so that you can tell it interactively 
 the calculation should proceed. That is, replace the 20 with a variable that is read in.*/
 
 #include<stdio.h>
+
 int main(void)
 {
-
+    int count = 0;
+    int sum = 0;
+    int end;
+    printf("How far the calculation should proceed: ");
+    scanf("%d",&end);
+    while(count++<end)
+        sum = sum + count;
+    printf("sum = %d\n",sum);
+    
+    return 0;
 }
