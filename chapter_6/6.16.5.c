@@ -26,13 +26,13 @@ int main(void)
     printf("Enter a uppercase letter: ");
     scanf("%c",&input);
     ROWS = input - 64;
-    for(row = 0; row < ROWS; row++)                    //行
+    for(row = 0; row < ROWS; row++)                    //rows
     {
-        for(space = 0; space < ROWS - row; space++)    //空格
+        for(space = 0; space < ROWS - row; space++)    //spaces
             printf(" ");
-        for(ch_f = 'A', i = 0; i <= row; i++)          //升序
+        for(ch_f = 'A', i = 0; i <= row; i++)          //ascend
             printf("%c",ch_f++);
-        for(i = 0,ch_b = row + 64; i <= row -1; i++)   //降序
+        for(i = 0,ch_b = row + 64; i <= row -1; i++)   //descend
             printf("%c",ch_b--);
         printf("\n");
     }
