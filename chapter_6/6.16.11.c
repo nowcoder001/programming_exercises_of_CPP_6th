@@ -4,12 +4,17 @@
 int main()
 {
     int value[8];
+    int index;
     int i;
     printf("Enter eight integers: ");
-    scanf("%d %d %d %d %d %d %d %d",&value[8]);
-    for(i = 7; i >= 0; i--)
+    for(i = 0; i < 8; i++)
     {
-        printf("%-5d",value[i]);
+        scanf("%d",&value[i]);
     }
+    for(index = 7; index >= 0; index--)
+    {
+        printf("%-5d",value[index]);
+    }
+    printf("\n");
     return 0;
 }
