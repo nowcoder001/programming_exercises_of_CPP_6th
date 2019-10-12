@@ -11,7 +11,7 @@ limit. A sample run should look something like this:
  Done*/
 
  #include<stdio.h>
- int main()
+ int main(void)
  {
     int low;
     int low_s;
