@@ -7,9 +7,16 @@ Enter key.*/
 #include<stdio.h>
 int main(void)
 {
-    int i;
-    int index;
+    int i,j;
     char ch[254];
-    printf("Enter a lime of character: ");
-    for()
+    printf("Enter a lime of character: \n");
+    for(i = 0, j = 0; i <= 254&&scanf("%c",&ch[i]); i++, j++)
+    {
+        printf("%c",ch[i]);
+        j = i;
+    }
+    printf("\n");
+    printf("%d",j);
+    
+    return 0;
 }
