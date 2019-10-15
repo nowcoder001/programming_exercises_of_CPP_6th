@@ -5,18 +5,20 @@ a time from input and that the newline character ( \n) is generated when you pre
 Enter key.*/
 
 #include<stdio.h>
+#define elements 255
+
 int main(void)
 {
     int i,j;
-    char ch[254];
-    printf("Enter a lime of character: \n");
-    for(i = 0, j = 0; i <= 254&&scanf("%c",&ch[i]); i++, j++)
+    char ch[elements];
+    printf("Enter a line of character: \n");
+    for(i = 0; i <= 254, ch[i -1] != '\n'; i++)
     {
-        printf("%c",ch[i]);
-        j = i;
+        scanf("%c",&ch[i]);
     }
+    i -= 2;
+    while(i >= 0)
+        printf("%c",ch[i--]);
     printf("\n");
-    printf("%d",j);
-    
     return 0;
 }
