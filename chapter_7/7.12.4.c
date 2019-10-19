@@ -3,7 +3,32 @@ with an exclamation mark, replaces each exclamation mark initially present with 
 exclamation marks, and reports at the end the number of substitutions it has made.*/
 
 #include<stdio.h>
+#define STOP '#'
+
 int main(void)
 {
+    char ch;
+    int count = 0;
+    printf("Enter a string of charactors with '.' and '!' inside of it(end with # to terminate): ");
+    while((ch = getchar()) != STOP)
+    {
+        if(ch == '.')
+        {
+            ch = '!';
+            printf("%c",ch);
+            count++;
+        }
+        else if(ch == '!')
+        {    
+            printf("%c",ch);
+            printf("%c",ch);
+            count++;
+        }
+        else
+            printf("%c",ch);
+
+    }
+    printf("\nIt has made %d substitutions.",count);    
     
+    return 0;
 }
