@@ -8,24 +8,23 @@ jolly() that prints the “jolly good” message once, and one named deny() that
 the final line once.*/
 
 #include<stdio.h>
-void print1();
-void print2();
+void jolly();
+void deny();
 
 int main(void)
 {
-    print1();
-    print2();
+    jolly();
+    jolly();
+    jolly();
+    deny();
     return 0;
 }
 
-void print1()
+void jolly()
 {
     printf("For he's a jolly good fellow!\n");
-    printf("For he's a jolly good fellow!\n");
-    printf("For he's a jolly good fellow!\n");
 }
-
-void print2()
+void deny()
 {
     printf("Which nobody can deny!\n");
 }

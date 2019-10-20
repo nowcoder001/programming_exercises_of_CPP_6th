@@ -29,5 +29,5 @@ void br()
 }
 void ic()
 {
-    printf("India,  China");
+    printf("India, China");
 }
