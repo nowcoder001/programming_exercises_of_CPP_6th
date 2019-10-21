@@ -45,7 +45,7 @@ int main(void)
     printf("a) artichokes                     b) beets\n");
     printf("c) carrots                        q) quit\n");
     printf("********************************************************************\n");
-    while((scanf("%c",&selection) == 1) && selection != 'q')    //选择种类
+    while((scanf("%c",&selection) == 1) && selection != 'q')    //选择种类, 输入'q'推出
     {
         if(selection == '\n')                                   //避免直接输入回车
             continue;
