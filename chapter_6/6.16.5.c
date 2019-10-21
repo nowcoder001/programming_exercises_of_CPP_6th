@@ -26,7 +26,7 @@ int main(void)
     printf("Enter a uppercase letter: ");
     scanf("%c",&input);
     ROWS = input - 64;                                 //行数根据输入的字母不同而不同，数越大行数越多
-    for(row = 0; row < ROWS; row++)                    //rows
+    for(row = 0; row < ROWS; row++)                    //行
     {
         for(space = 0; space < ROWS - row; space++)    //每行的左半部分空格数，根据输入字母不同而不同
             printf(" ");

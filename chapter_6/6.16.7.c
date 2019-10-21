@@ -3,7 +3,7 @@ backward. Hint: Use strlen() ( Chapter 4) to compute the index of the last chara
 the array.*/
 
 #include<stdio.h>
-#include<string.h>
+#include<string.h>      //strlen()所需头文件
 
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
     printf("Enter a single word: ");
     scanf("%s",word);
     index = strlen(word);
-    for(i = 0; i <= index;index--)
+    for(i = 0; i <= index;index--)  //减法计数
     {
         printf("%c",word[index]);
     }
