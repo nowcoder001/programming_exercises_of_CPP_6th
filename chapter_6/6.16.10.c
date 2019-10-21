@@ -18,10 +18,10 @@ limit. A sample run should look something like this:
     int upper;
     int value;
     printf("Enter lower and upper integer limits: ");
-    while(scanf("%d %d",&low,&upper) ==2 && low < upper)
+    while(scanf("%d %d",&low,&upper) == 2 && low < upper)  //当成功读取两个整数且下限小于上线时进入循环
     {
     low_s = low;
-    for(value = 0; low <= upper; low++)
+    for(value = 0; low <= upper; low++)                    //增量计数器
     {
         value += low * low;
     }

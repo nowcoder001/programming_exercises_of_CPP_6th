@@ -10,13 +10,13 @@ int main(void)
     int value;
     int j = 1;
     int i;
-    for(i = 0, value = 1; i < 8; i++)
+    for(i = 0, value = 1; i < 8; i++)   //赋值
     {
-        array[i] = value * 2;
-        value = array[i];
+        array[i] = value * 2;           
+        value = array[i];               //迭代计算各元素值
     }
     i = 0;
-    do
+    do                                  //打印结果
     {
         printf("%5d",array[i]);
     } while (i++ < 7);

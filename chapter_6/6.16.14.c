@@ -20,20 +20,20 @@ int main(void)
     double array1[8];
     double array2[8];
     printf("Enter values for the eight-elements of the first array: ");
-    for(i = 0; i <= count; i++)
+    for(i = 0; i <= count; i++)                             //对数组1赋值
     {
        scanf("%lf",&array1[i]);   
     }
-    for(i = 1, array2[0] = array1[0]; i <= count; i++)
+    for(i = 1, array2[0] = array1[0]; i <= count; i++)      //对数组2赋值
     {
-        array2[i] = array2[i-1] + array1[i];  
+        array2[i] = array2[i-1] + array1[i];                //数组2元素[n]的值 = 数组2元素[n-1]的值 + 数组1元素[n]的值
     }  
-    for(i = 0; i <= count; i++) 
+    for(i = 0; i <= count; i++)                             //打印数组1元素
     {
         printf("%-10f ",array1[i]);
     }
     printf("\n");
-    for(j = 0; j <= count;j++)
+    for(j = 0; j <= count;j++)                              //打印数组2元素
     {
         printf("%-10f ",array2[j]);
     }

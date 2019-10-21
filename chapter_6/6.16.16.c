@@ -20,11 +20,12 @@ int main(void)
     do
     {
         i++;
-        value1 = invest + invest * interest1 * i;
-        for(j = 1, trans = 1; j <= i; j++)
+        value1 = invest + invest * interest1 * i;   //计算Daphne的本息
+
+        for(j = 1, trans = 1; j <= i; j++)          //计算Deirdre的本息
             trans *= (1 + interest2);
         value2 = invest * trans;
-    } while (value1 >= value2);
+    } while (value1 >= value2);                     //比较
     printf("It takes %d years for the value of Deirdre's investment to exceed the value of Daphne's\n",i);
     printf("Daphne's final value is %f, Deirdre's final value is %f\n",value1,value2);
     return 0;

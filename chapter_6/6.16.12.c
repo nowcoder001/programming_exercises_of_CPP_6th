@@ -19,13 +19,13 @@ negative value terminate input. Look at the running totals after 100 terms, 1000
     int i,j;
     printf("Enter two number of terms: ");
     scanf("%d %d",&num1,&num2);
-    for(i = 1; i <= num1; i++)
+    for(i = 1; i <= num1; i++)           //计算数列1极限
     {
         value1 = value1 + 1.0/i;
     }
-    for(j = 1,k = -1.0; j <= num2; j++)
+    for(j = 1,k = -1.0; j <= num2; j++)  //计算数列2极限
     {
-        k *= -1.0;
+        k *= -1.0;                       //控制数列2每项正负号
         value2 = value2 + k/j;
     }
     printf("value = %f %f\n",value1,value2);

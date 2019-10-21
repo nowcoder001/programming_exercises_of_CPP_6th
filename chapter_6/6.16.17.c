@@ -14,9 +14,9 @@ int main(void)
     do
     {
         years++;
-        end_of_year = (beginning_of_year - 100000) + (beginning_of_year) * interest;
-        beginning_of_year = end_of_year;
-    } while (end_of_year >= 0);
+        end_of_year = (beginning_of_year - 100000) + (beginning_of_year) * interest;    //当年末取现后余额
+        beginning_of_year = end_of_year;                                                //下年初余额
+    } while (end_of_year > 0);                                                          //余额为0时结束循环
     printf("It takes %d years for Chuckie to empty his account.\n",years);
     
     return 0;
