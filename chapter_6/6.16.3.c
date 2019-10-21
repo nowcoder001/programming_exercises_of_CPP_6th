@@ -16,18 +16,18 @@ Then you can use the array index to select individual letters; for example, lets
 
 int main(void)
 {
-    const int ROWS = 6;
-    const int CH = 6;
+    const int ROWS = 6;         //行数
+    const int CH = 6;           //每行的字符数
     int row;
     int ch;
 
-    for(row = 0;row < ROWS;row++)
+    for(row = 0;row < ROWS;row++)               //行
     {
-        for(ch = 'F';ch >= 'F' - row;ch--)
+        for(ch = 'F';ch >= 'F' - row;ch--)      //减法计数器，每行字符倒序打印
         {
             printf("%c",ch);
         }
-        printf("\n");
+        printf("\n");           //每行结束换行
     }
     return 0;
 }
