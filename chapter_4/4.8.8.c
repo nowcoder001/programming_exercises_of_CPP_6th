@@ -12,8 +12,8 @@ Use symbolic constants (using const or #define) for the two conversion factors.*
 
 int main(void)
 {
-    const float gallon_to_liter = 3.785;
-    const float mile_to_kilometer = 1.609;
+    const float gallon_to_liter = 3.785;     //每加仑相等的公升数
+    const float mile_to_kilometer = 1.609;   //每英里相等的公里数
     float traveled_miles;
     float traveled_kilometers;
     float gasoline_gallons;

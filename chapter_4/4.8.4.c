@@ -5,7 +5,7 @@ Use type float, and use / for division. If you prefer, request the height in cen
 and display it in meters.*/
 
 #include<stdio.h>
-#define CENTI_TO_METER 100
+#define CENTI_TO_METER 100    //每米包含的厘米数
 int main(void)
 {
     char name[20];

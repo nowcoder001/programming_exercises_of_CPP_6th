@@ -7,15 +7,15 @@ newline.*/
 
 int main(void)
 {
-    int num_init = 0;
+    int num_init = 0;        //初始化计数器
     int num_enter;
 
     printf("Enter an integer number: ");
     scanf("%d",&num_enter);
-    while (num_init < 11)
+    while (num_init < 11)    //计数
     {
         printf("%d\n",num_enter+num_init);
-        num_init++;
+        num_init++;          //每次循环最后增加1
     }
     return 0;
 }

@@ -18,13 +18,13 @@ read, so it will return 1 if it reads a number, but it won’t return 1 if the u
 with 1. */
 
 #include<stdio.h>
-void Temperatures(double Ftemp);
+void Temperatures(double Ftemp);        //函数原型
 
 int main(void)
 {
     double Ftemp;
     printf("Enter a Fahrenheit temperature: ");
-    while(scanf("%lf",&Ftemp) == 1)
+    while(scanf("%lf",&Ftemp) == 1)     //scanf()成功读取一个相应格式的数会返回1
     {
         Temperatures(Ftemp);
         printf("Enter a Fahrenheit temperature (q or other nonnumeric value to quit): ");

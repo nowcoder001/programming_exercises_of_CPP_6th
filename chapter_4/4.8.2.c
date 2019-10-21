@@ -7,7 +7,7 @@
     d. Prints it in a field three characters wider than the name */
 
     #include<stdio.h>
-    #include<string.h>
+    #include<string.h>        //strlen()运行所需头文件
 
     int main(void)
     {
@@ -19,7 +19,7 @@
         printf("\"%s\"\n",name);
         printf("\"%20s\"\n",name);
         printf("\"%-20s\"\n",name);
-        printf("\"%*s\"\n",strlen(name)+3,name);
+        printf("\"%*s\"\n",strlen(name)+3,name);   // strlen()输出字符数
         
         return 0;
     }

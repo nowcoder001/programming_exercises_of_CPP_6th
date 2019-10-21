@@ -3,7 +3,7 @@ height in inches and then displays your height in centimeters. Or, if you prefer
 the height in centimeters and convert that to inches.*/
 
 #include<stdio.h>
-#define CENTI_TO_INCH 2.54
+#define CENTI_TO_INCH 2.54        //每英寸相等的厘米数
 
 int main(void)
 {

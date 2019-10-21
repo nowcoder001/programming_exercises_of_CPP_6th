@@ -7,7 +7,7 @@ download time) showing two digits to the right of the decimal point, as in the f
     downloads in 0.97 seconds.*/
 
 #include<stdio.h>
-#define BIT_TO_BYTE 8
+#define BIT_TO_BYTE 8     //每字节包含的位数
 
 int main(void)
 {

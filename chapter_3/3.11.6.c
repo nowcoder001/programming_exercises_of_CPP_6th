@@ -3,8 +3,8 @@ about 950 grams. Write a program that requests an amount of water, in quarts, an
 displays the number of water molecules in that amount.*/
 
 #include<stdio.h>
-#define MASS_OF_MOLECULES 3.0e-23
-#define MASS_OF_QUART 950.0
+#define MASS_OF_MOLECULES 3.0e-23       //一个水分子的总量（克）
+#define MASS_OF_QUART 950.0             //一夸脱水的重量（克）
 
 int main(void)
 {

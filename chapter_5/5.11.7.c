@@ -3,7 +3,7 @@ cubed. Use a function of your own design to cube the value and print it. The mai
 program should pass the entered value to this function.*/
 
 #include<stdio.h>
-void cube(double num);
+void cube(double num);   //函数原型
 
 int main(void)
 {
@@ -14,7 +14,7 @@ int main(void)
     
     return 0;
 }
-void cube(double num)
+void cube(double num) 
 {
-    printf("The nalue of the number cubed is: %f",num*num*num);
+    printf("The value of the number cubed is: %.2f\n",num*num*num);
 }

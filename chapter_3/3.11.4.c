@@ -12,7 +12,7 @@ int main(void)
 {
     double value;
     printf("Enter a float-point value: ");
-    scanf("%lf",&value);
+    scanf("%lf",&value);                           //scanf()用%lf读取double型值
     printf("fixed-point notation: %f\n",value);
     printf("exponential notation: %e\n",value);
     printf("p notation: %a\n",value);

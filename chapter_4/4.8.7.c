@@ -6,7 +6,7 @@ values of FLT_DIG and DBL_DIG. Are the displayed values of 1.0/3.0 consistent wi
 values?*/
 
 #include<stdio.h>
-#include<float.h>
+#include<float.h>  //DBL_DIG, FLT_DIG
 
 int main(void)
 {

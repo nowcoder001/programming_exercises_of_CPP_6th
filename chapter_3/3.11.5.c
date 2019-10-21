@@ -2,7 +2,7 @@
 your age in years and then displays the equivalent number of seconds.*/
 
 #include<stdio.h>
-#define SECOND_PER_YEAR 3.156e7
+#define SECOND_PER_YEAR 3.156e7   //每年的秒数
 
 int main()
 {

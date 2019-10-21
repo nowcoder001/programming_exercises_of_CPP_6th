@@ -10,8 +10,8 @@ nonpositive value is entered. A sample run should look like this:
     bye*/
 
 #include<stdio.h>
-#define CENTI_TO_FEET 30
-#define CENTI_TO_INCH 2.54
+#define CENTI_TO_FEET 30        //每英尺的厘米数
+#define CENTI_TO_INCH 2.54      //每英寸的厘米数
 
 int main(void)
 {
@@ -22,7 +22,7 @@ int main(void)
     {
         printf("%.1f cm = %.0f feet, %.1f inches\n",centi,centi/CENTI_TO_FEET,centi/CENTI_TO_INCH);
         printf("Enter a height in centimeters (<=0 to quit): ");
-        scanf("%f",&centi);    //输入大于0则继续循环
+        scanf("%f",&centi);                                         //输入大于0则继续循环
     }
     
     printf("bye");

@@ -16,7 +16,7 @@ int main()
 {
     int first_num;
     int second_num;
-    printf("This program computes moduli.\nEnter an integer to serve as the second operand: ");
+    printf("This program computes modulus.\nEnter an integer to serve as the second operand: ");
     scanf("%d",&second_num);
     printf("Now enter the first operand: ");
     scanf("%d",&first_num);

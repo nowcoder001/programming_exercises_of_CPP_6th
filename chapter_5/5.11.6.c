@@ -12,7 +12,7 @@ int main()
     int end;
     printf("How far the calculation should proceed: ");
     scanf("%d",&end);
-    while(count++<end)
+    while(count++<end)          //count在判断后立即增加1
         sum = count*count;
     printf("sum = %d\n",sum);
     

@@ -2,7 +2,7 @@
 point, don’t worry about fractional years and leap years. */
 
 #include<stdio.h>
-#define DAYS_PER_YEAR 365
+#define DAYS_PER_YEAR 365   //每年的天数
 
 int main(void)
 {
