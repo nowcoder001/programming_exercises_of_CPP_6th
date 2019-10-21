@@ -10,7 +10,7 @@ int main(void)
     scanf("%s",first_name);
     printf("Enter your last name: ");
     scanf("%s",last_name);
-    printf("Your full name is %s %s.\n",first_name,last_name);
+    printf("%s,%s.\n",last_name,first_name);
     
     return 0;
 }
