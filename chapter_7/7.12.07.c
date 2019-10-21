@@ -26,19 +26,19 @@ int main(void)
     printf("Enter the hours worked in a week: ");
     scanf("%lf",&hours);
 
-    if(hours <= EXCESS_TIME)
+    if(hours <= EXCESS_TIME)                    //工资
         gross_pay = PAY_RATE * hours;
     else
         gross_pay = EXCESS_TIME * PAY_RATE + (hours - EXCESS_TIME) * PAY_RATE * OVERTIME;
 
-    if(gross_pay <= 300)
+    if(gross_pay <= 300)                        //税
         taxes = gross_pay * TEX_300;
     else if(gross_pay <= 450 && gross_pay > 300)
         taxes = 300 * TEX_300 + (gross_pay - 300) * TEX_300_to_450;
     else
         taxes = 300 * TEX_300 + 150 * TEX_300_to_450 + (gross_pay - 450) * TEX_UPPER;
     
-    netpay = gross_pay - taxes;
+    netpay = gross_pay - taxes;                 //净收入
     printf("Gross pay: %.2f\nThe taxes: %.2f\nThe net pay: %.2f",gross_pay,taxes,netpay);
 
     return 0;

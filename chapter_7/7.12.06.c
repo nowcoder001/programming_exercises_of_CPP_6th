@@ -15,14 +15,14 @@ int main(void)
     prev_ch = '\n';
     while((ch = getchar()) != '#')
     {
-        if(ch == 'e')
+        if(ch == 'e')                           //读入'e'时，prev_ch赋值为'e'
             prev_ch = ch;
-        else if(ch == 'i' && prev_ch == 'e')
+        else if(ch == 'i' && prev_ch == 'e')    //读入'i'时，且prev_ch = e即前一个字符为'e'时，计数器加1
         {
             ei_count++;
             prev_ch = ch;
         }
-        else
+        else                                    //既非'e'也非'i'时
             prev_ch = ch;
     }
     printf("The number of times that the sequence ei occurs is %d\n",ei_count);

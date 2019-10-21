@@ -13,13 +13,13 @@ int main(void)
     int n_other_ch = 0;
 
     printf("Enter text (end with # to terminate): ");
-    while((ch = getchar()) != STOP)
+    while((ch = getchar()) != STOP)     //当读取到'#'时停止循环
     {
-        if(ch == '\n')
+        if(ch == '\n')                  //行
             n_line_ch++;
-        else if(isspace(ch))
+        else if(isspace(ch))            //空格
             n_space++;
-        else
+        else                            //其他字符
             n_other_ch++;
     }
     printf("The number of spaces is %d, nweline characters is %d, number of all other characters is %d\n",n_space,n_line_ch,n_other_ch);

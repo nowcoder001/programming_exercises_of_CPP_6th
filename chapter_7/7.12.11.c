@@ -45,11 +45,11 @@ int main(void)
     printf("a) artichokes                     b) beets\n");
     printf("c) carrots                        q) quit\n");
     printf("********************************************************************\n");
-    while((scanf("%c",&selection) == 1) && selection != 'q')
+    while((scanf("%c",&selection) == 1) && selection != 'q')    //选择种类
     {
-        if(selection == '\n')
+        if(selection == '\n')                                   //避免直接输入回车
             continue;
-        switch(selection)
+        switch(selection)                                       //计算购买重量
         {
             case 'a':
             {
@@ -84,7 +84,7 @@ int main(void)
             } 
         }
     }
-    c_artichokes = PRICE_ARTICHOKES * w_artichokes;
+    c_artichokes = PRICE_ARTICHOKES * w_artichokes;                       
     printf("Artichokes are $%.2f per pound, you ordered %.2f pounds.\n",PRICE_ARTICHOKES,w_artichokes);
     printf("The cost of artichokes you odered are: $%.2f\n",c_artichokes);
     c_beets = PRICE_BEETS * w_beets;
@@ -94,13 +94,13 @@ int main(void)
     printf("Carrots are $%.2f per pound, you ordered %.2f pounds.\n",PRICE_CARROTS,w_carrots);
     printf("The cost of carrots you odered are: $%.2f\n",c_carrots);
     c_total = c_artichokes + c_beets + c_carrots;
-    printf("The total cost of the order are: $%.2f\n",c_total);
+    printf("The total cost of the order are: $%.2f\n",c_total);         //计算总价格
 
     if(c_total >= 100)
         discount = DISCOUNT_RATE * c_total;
     else
         discount = 0;
-    printf("The discount: $%.2f\n",discount);
+    printf("The discount: $%.2f\n",discount);                           //计算折扣 
 
     w_total = w_artichokes + w_beets + w_carrots;
     if(w_total <= SHIPCHARGE_1class)
@@ -109,10 +109,10 @@ int main(void)
         ship_charge = SHIPCHARGE_5to20;
     else
         ship_charge = SHIPCHARGE_5to20 + (w_total - SHIPCHARGE_2class) * SHIPCHARGE_RATE_20more;
-        printf("The shipping charge are: $%.2f\n",ship_charge);
+        printf("The shipping charge are: $%.2f\n",ship_charge);         //计算运费    
 
-    final_charges = c_total - discount + ship_charge;
-    printf("The grand total of all the charges are: $%.2f\n",final_charges);
+    final_charges = c_total - discount + ship_charge;                   
+    printf("The grand total of all the charges are: $%.2f\n",final_charges);    //计算净价格
     
     return 0;
 }

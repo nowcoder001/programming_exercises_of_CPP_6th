@@ -8,18 +8,18 @@ int main(void)
     char ch;
     int count = 0;
     printf("Enter a string of charactors with '.' and '!' inside of it(end with # to terminate): ");
-    while((ch = getchar()) != STOP)
+    while((ch = getchar()) != STOP)     //读入字符直到'#'
     {
         switch(ch)
         {
-            case '.':
+            case '.':                   //'.'替换为'!'
             {
                 ch = '!';
                 printf("%c",ch);
                 count++;
                 break;
             }
-            case '!':
+            case '!':                   //'!'替换为'!!'
             {
                 printf("%c",ch);
                 printf("%c",ch);

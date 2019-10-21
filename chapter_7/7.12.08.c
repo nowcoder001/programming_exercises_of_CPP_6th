@@ -29,11 +29,11 @@ int main(void)
     printf("3) $10.00/hr                    4) $11.20/hr\n");
     printf("5) quit\n");
     printf("*****************************************************************\n");
-    while(scanf("%d",&selection) == 1 && selection != 5)
+    while(scanf("%d",&selection) == 1 && selection != 5)    //成功读入相应数据且不是5时循环
     {
         switch(selection)
         {
-            case 1:
+            case 1:                                         //选项1
             {
                 printf("Enter the hours your worked: ");
                 scanf("%lf",&hours);
@@ -41,7 +41,7 @@ int main(void)
                 printf("Gross pay: %.2f\n",gross_pay);
                 continue;
             } 
-            case 2:
+            case 2:                                         //选项2
             {
                 printf("Enter the hours your worked: ");
                 scanf("%lf",&hours);
@@ -49,7 +49,7 @@ int main(void)
                 printf("Gross pay: %.2f\n",gross_pay);
                 continue;
             }
-            case 3:
+            case 3:                                         //选项3
             {
                 printf("Enter the hours your worked: ");
                 scanf("%lf",&hours);
@@ -57,7 +57,7 @@ int main(void)
                 printf("Gross pay: %.2f\n",gross_pay);
                 continue;
             }    
-            case 4:
+            case 4:                                         //选项4
             {
                 printf("Enter the hours your worked: ");
                 scanf("%lf",&hours);
@@ -65,9 +65,7 @@ int main(void)
                 printf("Gross pay: %.2f\n",gross_pay);
                 continue;
             }
-            case 5:
-                break;
-            default:
+            default:                                        //键入非选项
             {
                 printf("You can only choice number 1 to 5\n");
                 continue;

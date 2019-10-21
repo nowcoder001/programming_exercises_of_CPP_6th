@@ -29,20 +29,20 @@ int main(void)
     
     while(scanf("%d",&selection) == 1 && selection != 5)
     {
-        if(selection > 5 || selection < 1)
+        if(selection > 5 || selection < 1)                  //判断输入是否为选项中的数，否则重新输入
         {
             printf("You can only enter number 1 to 5\n");
             continue;
         }
         printf("Enter the income: ");
-        if(scanf("%lf",&taxable_income) != 1)
+        if(scanf("%lf",&taxable_income) != 1)               //判断输入的收入是否为数字，否则重新输入
         {
             printf("You can only enter numbers!\n");
         }
         switch(selection)
         {
             case 1:
-                if(taxable_income <= 17850)
+                if(taxable_income <= 17850)                 //选项1
                 {
                     tax = taxable_income * RATE_1;
                     break;
@@ -52,20 +52,19 @@ int main(void)
                     tax = 17850 * RATE_1 + (taxable_income - 17850) * RATE_2;
                     break;
                 } 
-            case 2:
+            case 2:                                         //选项2
                 if(taxable_income <= 23900)
                 {
                     tax = taxable_income * RATE_1;
                     break;
-                }
-                    
+                }    
                 else
                 {
                     tax = 23900 * RATE_1 + (taxable_income - 23900) * RATE_2;
                     break;
                 }
                     
-            case 3:
+            case 3:                                         //选项3
                 if(taxable_income <= 29750)
                 {
                     tax = taxable_income * RATE_1;
@@ -76,7 +75,7 @@ int main(void)
                     tax = 29750 * RATE_1 + (taxable_income - 29750) * RATE_2;
                     break;
                 }  
-            case 4:
+            case 4:                                         //选项4
                 if(taxable_income <= 14875)
                 {
                     tax = taxable_income * RATE_1;

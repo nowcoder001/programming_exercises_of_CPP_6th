@@ -12,10 +12,10 @@ int main(void)
     char ch;
     int n_char = 0;
     printf("Enter text end with #: ");
-    while((ch = getchar()) != STOP)
+    while((ch = getchar()) != STOP)     //读取字符直到'#'
     {
         
-        if(!isspace(ch) && ch != '\n')
+        if(!isspace(ch) && ch != '\n')  //如果不是空格和换行符执行此项
         {
             n_char++;
             printf("char: %c,ASCII: %-4d  ",ch,ch);
@@ -23,7 +23,7 @@ int main(void)
         else
             continue;
         
-        if(n_char%CYCLE == 0)
+        if(n_char%CYCLE == 0)   //每8个循环周期换行
             printf("\n");
     }  
     return 0;

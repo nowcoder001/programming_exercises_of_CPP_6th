@@ -14,24 +14,26 @@ int main(void)
     printf("Enter integers, each number separate by space(terminate with 0): \n");
     while(scanf("%d",&num))
     {   
-        if(num == 0)
+        if(num == 0)            //0计数，并退出
         {
             even_count++;
             break;
         }
-        else if(num%2 == 0)
+        else if(num%2 == 0)     //偶数计数
         {
             even_count++;
             sum_even += num;
         } 
-        else 
+        else                    //奇数计数
         {
             odd_count++;
             sum_odd += num;            
         }
     }
-    printf("The total number of even integers entered is %d, the average value of even integers is %.2f\n",even_count,(double)sum_even/even_count);
-    printf("The total number of odd integers entered is %d, the average value of odd integers is %.2f\n",odd_count,(double)sum_odd/odd_count);
+    printf("The total number of even integers entered is %d, "
+            "the average value of even integers is %.2f\n",even_count,(double)sum_even/even_count);
+    printf("The total number of odd integers entered is %d, "
+            "the average value of odd integers is %.2f\n",odd_count,(double)sum_odd/odd_count);
 
     return 0;
 }

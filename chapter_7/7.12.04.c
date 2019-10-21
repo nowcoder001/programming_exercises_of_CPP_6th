@@ -10,15 +10,15 @@ int main(void)
     char ch;
     int count = 0;
     printf("Enter a string of charactors with '.' and '!' inside of it(end with # to terminate): ");
-    while((ch = getchar()) != STOP)
+    while((ch = getchar()) != STOP)     //读入字符直到'#'
     {
-        if(ch == '.')
+        if(ch == '.')                   //'.'替换为'!'
         {
             ch = '!';
             printf("%c",ch);
             count++;
         }
-        else if(ch == '!')
+        else if(ch == '!')              //'!'替换为'!!'
         {    
             printf("%c",ch);
             printf("%c",ch);
