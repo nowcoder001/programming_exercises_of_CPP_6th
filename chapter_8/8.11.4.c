@@ -18,12 +18,12 @@ int main(void)
 
     while((ch = getchar()) != EOF)
     {
-        if(!isspace(ch) && !ispunct(ch) && in_word == false)    //当在单词开头读入字母时单词字符数+1
+        if(!isspace(ch) && !ispunct(ch) && in_word == false)    //当在单词开头读入字母时字符数+1
         {
             in_word = true;
             count_c++;
         }
-        else if(!isspace(ch) && !ispunct(ch) && in_word == true)//当在单词中间读入字母时单词字符数+1
+        else if(!isspace(ch) && !ispunct(ch) && in_word == true)//当在单词中间读入字母时字符数+1
             count_c++;
         if(isspace(ch) || ispunct(ch) && in_word == true)       //当在词尾读入空格或标点时单词计数+1
         {
