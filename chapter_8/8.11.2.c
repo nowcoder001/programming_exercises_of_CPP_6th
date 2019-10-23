@@ -30,7 +30,7 @@ int main(void)
             printf("^%c, %-3d  ",ch + 64,ch);
         else                        //字母和其他字符
             printf("%2c, %-3d  " ,ch,ch);
-        if(count % DIV == 0)             //每读入10个字符换行
+        if(count % DIV == 0)        //每读入10个字符换行
         {
             printf("\n");
             count = 0;
