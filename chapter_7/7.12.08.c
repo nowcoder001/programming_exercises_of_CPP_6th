@@ -39,7 +39,7 @@ int main(void)
                 scanf("%lf",&hours);
                 gross_pay = hours * RATE_1;
                 printf("Gross pay: %.2f\n",gross_pay);
-                continue;
+                break;
             } 
             case 2:                                         //选项2
             {
@@ -47,7 +47,7 @@ int main(void)
                 scanf("%lf",&hours);
                 gross_pay = hours * RATE_2;
                 printf("Gross pay: %.2f\n",gross_pay);
-                continue;
+                break;
             }
             case 3:                                         //选项3
             {
@@ -55,7 +55,7 @@ int main(void)
                 scanf("%lf",&hours);
                 gross_pay = hours * RATE_3;
                 printf("Gross pay: %.2f\n",gross_pay);
-                continue;
+                break;
             }    
             case 4:                                         //选项4
             {
@@ -63,12 +63,12 @@ int main(void)
                 scanf("%lf",&hours);
                 gross_pay = hours * RATE_4;
                 printf("Gross pay: %.2f\n",gross_pay);
-                continue;
+                break;
             }
             default:                                        //键入非选项
             {
                 printf("You can only choice number 1 to 5\n");
-                continue;
+                break;
             }     
         }
     }

@@ -14,52 +14,55 @@ int main(void)
     double gross_pay;
     printf("*****************************************************************\n");
     printf("Enter the number corresponding to the desired pay rate or action: \n");
-    printf("1) $8.75/hr                     2) $9.33/hr\n");
-    printf("3) $10.00/hr                    4) $11.20/hr\n");
-    printf("5) quit\n");
+    printf("a) $8.75/hr                     b) $9.33/hr\n");
+    printf("c) $10.00/hr                    d) $11.20/hr\n");
+    printf("q) quit\n");
     printf("*****************************************************************\n");
-    while(scanf("%d",&selection) == 1 && selection != 5)    //成功读入相应数据且不是5时循环
+    while((selection = getchar()) != 'q')    //不是5时循环
     {
         switch(selection)
         {
-            case 1:                                         //选项1
+            case 'a':                                         
             {
                 printf("Enter the hours your worked: ");
                 scanf("%lf",&hours);
                 gross_pay = hours * RATE_1;
                 printf("Gross pay: %.2f\n",gross_pay);
-                continue;
+                break;
             } 
-            case 2:                                         //选项2
+            case 'b':                                         
             {
                 printf("Enter the hours your worked: ");
                 scanf("%lf",&hours);
                 gross_pay = hours * RATE_2;
                 printf("Gross pay: %.2f\n",gross_pay);
-                continue;
+                break;
             }
-            case 3:                                         //选项3
+            case 'c':                                         
             {
                 printf("Enter the hours your worked: ");
                 scanf("%lf",&hours);
                 gross_pay = hours * RATE_3;
                 printf("Gross pay: %.2f\n",gross_pay);
-                continue;
+                break;
             }    
-            case 4:                                         //选项4
+            case 'd':                                        
             {
                 printf("Enter the hours your worked: ");
                 scanf("%lf",&hours);
                 gross_pay = hours * RATE_4;
                 printf("Gross pay: %.2f\n",gross_pay);
-                continue;
+                break;
             }
             default:                                        //键入非选项
             {
-                printf("You can only choice number 1 to 5\n");
-                continue;
-            }     
+                printf("You can only choice a, b, c, d, or q.\n");
+                break;
+            }
+
         }
+        while(getchar() != '\n')                            //吸收键入结尾的'\n'
+            continue;
     }
     return 0;
 }
