@@ -15,7 +15,7 @@ int main(void)
     int count_c = 0;           //单词字符计数
     int count_w = 0;           //单词计数
     bool in_word = false;      //判断当前位置是否在单词中，真为在单词中，假为在词前或词尾 
-
+    printf("Enter characters: ");
     while((ch = getchar()) != EOF)
     {
         if(!isspace(ch) && !ispunct(ch) && in_word == false)    //当在单词开头读入字母时字符数+1

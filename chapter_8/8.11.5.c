@@ -16,12 +16,12 @@ int main(void)
     printf("Pick an integer from 1 to 100. I will try to gess it.\n"
             "Respond with a y if my guess is right and with an n if it is wrong.\n");
     printf("Is your number %d?\n",guess);
-    while(getchar() != 'y')         //输入为否时执行循环
+    while(getchar() != 'y')         
     {
-
         printf("Is your number higher or lower than mine?");
-        if(getchar() == '\n')
+        if(getchar() == '\n')       //吸收缓冲区中输入后面的'\n'
             ch = getchar();
+        //二分法
         if(ch == 'h')               //数字比猜测大时
         {
             left_value = guess - 1;
@@ -34,6 +34,7 @@ int main(void)
             m_value = (right_value - left_value)/2;
             guess -= m_value;
         }
+        
         printf("Well, then, is it %d?\n",guess);
         while(getchar() != '\n')    //吸收缓冲区中输入后面的'\n'
             continue;
