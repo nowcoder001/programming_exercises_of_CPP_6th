@@ -89,25 +89,25 @@ int main(void)
             case 'a':           //加法
             {
                 result = first_num + second_num;   
-                printf("%f + %f = %f\n",first_num,second_num,result);
+                printf("%.1f + %.1f = %.1f\n",first_num,second_num,result);
                 break;
             }
             case 'b':           //减法
             {
                 result = first_num - second_num;
-                printf("%f - %f = %f\n",first_num,second_num,result);
+                printf("%.1f - %.1f = %.1f\n",first_num,second_num,result);
                 break;
             }
             case 'c':           //乘法
             {
                 result = first_num * second_num;
-                printf("%f * %f = %f\n",first_num,second_num,result);
+                printf("%.1f * %.1f = %.1f\n",first_num,second_num,result);
                 break;
             }
             case 'd':           //除法
             {
                 result = first_num / second_num;
-                printf("%f / %f = %f\n",first_num,second_num,result);
+                printf("%.1f / %.1f = %.1f\n",first_num,second_num,result);
                 break;
             } 
         }
@@ -118,4 +118,7 @@ int main(void)
         while(getchar() != '\n') //吸收'\n'
             continue;
     }
+    if(selection == 'q')
+        printf("Bye.\n");
+    return 0;
 }
