@@ -15,7 +15,7 @@ int main(void)
     for(num = 2; num <= i; num++)               
     {
         isPrime = true;                         //初始化标志
-        for(div = 2; (div * div) <= num; div++) //使用加法计数器来穷举求模的被除数，使用者输入值为某两个因子的公倍数，只穷举一对中的一个
+        for(div = 2; (div * div) <= num; div++) //求模的被除数，使用者输入值为某两个因子的公倍数，只列出一对中的一个
         {
             if(num % div == 0)                  //计算是否为素数
             {
