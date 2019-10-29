@@ -11,11 +11,15 @@ int main(void)
     unsigned long number;
     int base;
     printf("Enter integer and base(q to quit): \n");
-    while(scanf("%ul %d",&number, &base) == 2)
+    while(scanf("%u %d",&number,&base) == 2)
     {
-        printf("%ul %d",number,base);
+        if(base < 2 || base > 10)
+        {
+            printf("Base is in the range of 2-10, enter another number.\n");
+            continue;
+        }
         to_base_on(number, base);
-        printf(",the base-%d equivalent of %d: ",base, number);
+        printf(",the base-%d equivalent of %u: ",base, number);
         putchar('\n');
         printf("Enter an integer(q to quit): \n");
     }
