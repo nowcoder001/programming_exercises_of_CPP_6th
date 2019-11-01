@@ -16,9 +16,9 @@ declarations:
  copy_ptrs(target3, source, source + 5);*/
 
 #include<stdio.h>
-void copy_arr(double *target, double *source, int size);
-void copy_ptr(double *target, double *source, int size);
-void copy_ptr(double *target, double *source, int size);
+void copy_arr(double *target1, double *source, int size);
+void copy_ptr(double *target2, double *source, int size);
+void copy_ptrs(double *target3, double *source_first, double *source_end);
 
 int main(void)
 {
@@ -29,9 +29,29 @@ int main(void)
     copy_arr(target1, source, 5);
     copy_ptr(target2, source, 5);
     copy_ptrs(target3, source, source + 5);
+
+    return 0;
 }
 
-void copy_arr(double *target, double *source, int size)
+void copy_arr(double *target1, double *source, int size)
 {
+    int i;
+    for(i = 0; i < size; i++)
+        target1[i] = source[i];
+}
+void copy_ptr(double *target2, double *source, int size)
+{
+    int i;
+    for(i = 0; i < size; i++)
+        *(target2 + i) = *(source + i);
+}
+void copy_ptrs(double *target3, double *source_start, double *source_end)
+{
+    while(source_start < source_end)
+    {
+        *(target3) = *(source_start);
+        target3++;
+        source_start++;
+    }
 
 }
