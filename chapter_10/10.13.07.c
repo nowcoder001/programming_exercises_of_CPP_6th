@@ -16,7 +16,7 @@ int main(void)
     double array[ELEMENT][SUBARRAY] = {{1, 2, 3}, {4, 5, 6}};
 
     for(count = 0; count < ELEMENT; count++)
-        copy_ptr(ar[count], array[count],SUBARRAY);
+        copy_ptr(ar[count], array[count], SUBARRAY);
     for(i = 0; i < ELEMENT; i++)
         for(j = 0; j < SUBARRAY; j++)
             printf("%f ",ar[i][j]);
