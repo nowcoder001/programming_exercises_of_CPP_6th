@@ -6,8 +6,8 @@ average for several years of rainfall data */
 #include <stdio.h>
 #define MONTHS 12
 #define YEARS 5
-float total_rain(float rain[][MONTHS]);
-void ave_month(float rain[][MONTHS]);
+float total_rain(const float rain[][MONTHS]);
+void ave_month(const float rain[][MONTHS]);
 
 int main(void)
 {
@@ -31,7 +31,7 @@ int main(void)
     printf("\n");
     return 0;
 }
-float total_rain(float rain[][MONTHS])
+float total_rain(const float rain[][MONTHS])
 {
     int year, month;
     float subtot, total;
@@ -45,7 +45,7 @@ float total_rain(float rain[][MONTHS])
     return total;
 }
 
-void ave_month(float rain[][MONTHS])
+void ave_month(const float rain[][MONTHS])
 {
     int month, year;
     float subtot;
