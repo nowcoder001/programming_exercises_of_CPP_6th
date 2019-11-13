@@ -4,11 +4,10 @@ instead of subscripts. (You still have to declare and initialize the array.)*/
  /* rain.c -- finds yearly totals, yearly average, and monthly
  average for several years of rainfall data */
  #include <stdio.h>
- #define MONTHS 12  // number of months in a year
- #define YEARS 5    // number of years of data
+ #define MONTHS 12
+ #define YEARS 5
  int main(void)
  {
-    // initializing rainfall data for 2010 - 2014
     const float rain[YEARS][MONTHS] =
     {
         {4.3,4.3,4.3,3.0,2.0,1.2,0.2,0.2,0.4,2.4,3.5,6.6},
