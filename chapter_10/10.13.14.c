@@ -3,29 +3,29 @@
 #include<stdio.h>
 #define ROW 3
 #define COL 5
-void store(int rows, int cols, double array[][cols]);            //Store the information in a 3×5 array
-double aver_row(double array[]);            //Compute the average of each set of five values
-double aver_all(double array[][COL]);       //Compute the average of all the values
-double largest_num(double array[][COL]);    //Determine the largest value of the 15 values
-void print(double array[][COL]);                           //Report the results
+void store(int row, int col, double array[][col]);              //Store the information in a 3×5 array
+double aver_row(double array[]);                                //Compute the average of each set of five values
+double aver_all(int row, int col, double array[][col]);         //Compute the average of all the values
+double largest_num(int row, int col, double array[][col]);      //Determine the largest value of the 15 values
+void print(int row, int col, double array[][col]);              //Report the results
 
 int main(void)
 {
-    int rows = 3;
-    int cols = 5;
+    int row = 3;
+    int col = 5;
     double array[ROW][COL];
-    store(array);
-    largest_num(array);
-    print(array);
+    store(row, col, array);
+    largest_num(row, col, array);
+    print(row, col, array);
     
     return 0;
 }
 
-void store(int rows, int cols, double array[][cols])
+void store(int row, int col, double array[][col])
 {
     int i, j;
     printf("Enter 3 groups of number, each group has 5 numbers: \n");
-    for(i = 0; i < rows; i++)
+    for(i = 0; i < ROW; i++)
         for(j = 0; j < COL; j++)
             scanf("%lf",&array[i][j]);
 }
@@ -39,7 +39,7 @@ double aver_row(double array[])
     return sum / COL;
 }
 
-double aver_all(double array[][COL])
+double aver_all(int row, int col, double array[][col])
 {
     int i, j;
     double sum = 0;
@@ -49,7 +49,7 @@ double aver_all(double array[][COL])
     return sum / (ROW * COL);
 }
 
-double largest_num(double array[][COL])
+double largest_num(int row, int col, double array[][col])
 {
     int i, j;
     double l_num = 0;
@@ -62,9 +62,10 @@ double largest_num(double array[][COL])
     return l_num;
 }
 
-void print(double array[][COL])
+void print(int row, int col, double array[][col])
 {
     int i, j;
+    printf("The elements of array are: \n");
     for(i = 0; i < ROW; i++)
     {
         for(j = 0; j < COL; j++)
@@ -75,7 +76,7 @@ void print(double array[][COL])
     for(i = 0; i < ROW; i++)
         printf("The average number of row %d is %.2f\n", i + 1, aver_row(array[i]));
     
-    printf("The average number of array is: %.2f\n",aver_all(array));
+    printf("The average number of array is: %.2f\n",aver_all(row, col, array));
 
-    printf("The largest value of 15 values is: %.2f",largest_num(array));
+    printf("The largest value of 15 values is: %.2f",largest_num(row, col,array));
 }
